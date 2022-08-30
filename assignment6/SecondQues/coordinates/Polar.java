@@ -1,0 +1,20 @@
+package coordinates;
+
+import java.math.*;
+import java.util.*;
+
+public class Polar {
+
+  double r, theta;
+
+  public Polar(double r, double theta) {
+    this.r = r;
+    this.theta = theta;
+  }
+
+  public void toCartesian() {
+    double x = r * Math.sin(theta);
+    double y = r * Math.cos(theta);
+    System.out.println("Polar to Cartesian Conversion:( " + x + "," + y + ")");
+  }
+}
